@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module>
+    <entry-point class="gr.atc.games.fruitcatcher.client.GwtLauncher"/>
+    <set-configuration-property name="gdx.assetpath" value="../FruitCatcher-android/assets"/>
+    <inherits name="com.badlogic.gdx.backends.gdx_backends_gwt"/>
+</module>
