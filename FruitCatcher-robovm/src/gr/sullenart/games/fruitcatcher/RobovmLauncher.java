@@ -12,6 +12,7 @@ public class RobovmLauncher extends IOSApplication.Delegate {
 		IOSApplicationConfiguration config = new IOSApplicationConfiguration();
 		config.orientationLandscape = true;
 		config.orientationPortrait = false;
+		config.useAccelerometer = true;
 		return new IOSApplication(new FruitCatcherGame(null, "en"), config);
 	}
 

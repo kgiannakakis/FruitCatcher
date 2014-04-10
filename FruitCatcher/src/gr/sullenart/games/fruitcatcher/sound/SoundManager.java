@@ -26,11 +26,11 @@ public class SoundManager {
 	}
 	
 	public void load() {
-        catchSound = Gdx.audio.newSound(Gdx.files.internal("catch.ogg"));
-        missSound = Gdx.audio.newSound(Gdx.files.internal("miss.ogg"));
-        tictacSound = Gdx.audio.newSound(Gdx.files.internal("tictac.ogg"));
-        dingdongSound = Gdx.audio.newSound(Gdx.files.internal("dingdong.ogg"));
-        bellSound = Gdx.audio.newSound(Gdx.files.internal("bell.ogg"));
+        catchSound = Gdx.audio.newSound(Gdx.files.internal("catch.mp3"));
+        missSound = Gdx.audio.newSound(Gdx.files.internal("miss.mp3"));
+        tictacSound = Gdx.audio.newSound(Gdx.files.internal("tictac.mp3"));
+        dingdongSound = Gdx.audio.newSound(Gdx.files.internal("dingdong.mp3"));
+        bellSound = Gdx.audio.newSound(Gdx.files.internal("bell.mp3"));
 	}
 	
 	public void dispose() {
