@@ -1,0 +1,97 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.5'
+        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.github.jtakakura:gradle-robovm-plugin:0.0.10'
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = 'FruitCatcher'
+        gdxVersion = '1.3.1'
+        roboVMVersion = '0.0.14'
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java"
+
+
+    dependencies {
+        compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
+    }
+}
+
+project(":android") {
+    apply plugin: "android"
+
+    configurations { natives }
+
+    dependencies {
+        compile project(":core")
+        compile fileTree(dir: 'libs', include: ['GoogleAdMobAdsSdk-6.3.1.jar'])
+        compile "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
+    }
+}
+
+project(":ios") {
+    apply plugin: "java"
+    apply plugin: "robovm"
+
+    configurations { natives }
+
+    dependencies {
+        compile project(":core")
+        compile "org.robovm:robovm-rt:${roboVMVersion}"
+        compile "org.robovm:robovm-cocoatouch:${roboVMVersion}"
+        compile "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+    }
+}
+
+project(":html") {
+    apply plugin: "gwt"
+    apply plugin: "war"
+
+
+    dependencies {
+        compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
+        compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
+    }
+}
+
+project(":core") {
+    apply plugin: "java"
+
+
+    dependencies {
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    }
+}
+
+tasks.eclipse.doLast {
+    delete ".project"
+}

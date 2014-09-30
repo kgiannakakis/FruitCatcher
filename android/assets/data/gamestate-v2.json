@@ -1,0 +1,1 @@
+{gameScreenState:{startGameTime:0,lastBadObjectTime:0,lastBonusItemTime:0,lastFruitTime:0,isPaused:false,isStarted:false,basketX:0,score:0,secondsRemaining:0,isFinished:false,fallingObjects:[]},gameState:{active:false,challenge:0,kidsMode:false,level:0,totalScore:0}}

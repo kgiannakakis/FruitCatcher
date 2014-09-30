@@ -1,0 +1,125 @@
+
+text_images.png
+size: 1019,254
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+AutumnLabel
+  rotate: false
+  xy: 693, 204
+  size: 202, 50
+  orig: 202, 50
+  offset: 0, 0
+  index: -1
+CatchTheFruits
+  rotate: false
+  xy: 2, 141
+  size: 451, 113
+  orig: 451, 113
+  offset: 0, 0
+  index: -1
+Goal
+  rotate: false
+  xy: 622, 2
+  size: 134, 51
+  orig: 134, 51
+  offset: 0, 0
+  index: -1
+Kids
+  rotate: false
+  xy: 897, 208
+  size: 109, 46
+  orig: 109, 46
+  offset: 0, 0
+  index: -1
+Level
+  rotate: false
+  xy: 254, 45
+  size: 182, 46
+  orig: 182, 46
+  offset: 0, 0
+  index: -1
+Level_grey
+  rotate: false
+  xy: 438, 27
+  size: 182, 46
+  orig: 182, 46
+  offset: 0, 0
+  index: -1
+Points
+  rotate: false
+  xy: 693, 155
+  size: 180, 47
+  orig: 180, 47
+  offset: 0, 0
+  index: -1
+Scores
+  rotate: false
+  xy: 254, 93
+  size: 200, 46
+  orig: 200, 46
+  offset: 0, 0
+  index: -1
+SpringLabel
+  rotate: false
+  xy: 456, 75
+  size: 177, 71
+  orig: 177, 71
+  offset: 0, 0
+  index: -1
+Start
+  rotate: false
+  xy: 635, 55
+  size: 158, 46
+  orig: 158, 46
+  offset: 0, 0
+  index: -1
+Success
+  rotate: false
+  xy: 2, 33
+  size: 225, 52
+  orig: 225, 52
+  offset: 0, 0
+  index: -1
+SummerLabel
+  rotate: false
+  xy: 455, 148
+  size: 220, 52
+  orig: 220, 52
+  offset: 0, 0
+  index: -1
+Total
+  rotate: false
+  xy: 795, 49
+  size: 145, 52
+  orig: 145, 52
+  offset: 0, 0
+  index: -1
+Unlocked
+  rotate: false
+  xy: 2, 87
+  size: 250, 52
+  orig: 250, 52
+  offset: 0, 0
+  index: -1
+WinterLabel
+  rotate: false
+  xy: 677, 103
+  size: 172, 50
+  orig: 172, 50
+  offset: 0, 0
+  index: -1
+YouLose
+  rotate: false
+  xy: 455, 202
+  size: 236, 52
+  orig: 236, 52
+  offset: 0, 0
+  index: -1
+fruits
+  rotate: false
+  xy: 875, 150
+  size: 144, 52
+  orig: 144, 52
+  offset: 0, 0
+  index: -1

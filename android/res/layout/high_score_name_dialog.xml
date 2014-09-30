@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/high_score_name_dialog_layout_root"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              >
+    <TextView android:text="@string/enter_high_score_name"
+    		  android:layout_width="wrap_content"
+    		  android:layout_height="wrap_content"></TextView>
+	<LinearLayout android:orientation="horizontal"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:padding="10dp"
+	              >
+	    <TextView android:layout_width="wrap_content"
+	              android:layout_height="fill_parent"
+	              android:textColor="#FFF"
+	              android:text="@string/name"
+	              android:gravity="center"
+	              android:layout_marginRight="10sp"
+	              />
+		<EditText android:text=""
+				   android:id="@+id/players_name"
+				   android:layout_width="fill_parent"
+				   android:layout_height="fill_parent"
+				   android:minWidth="140dp"
+				   android:inputType="text">
+		</EditText>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:padding="10dp"
+	              >
+		<Button android:id="@+id/high_score_name_ok_button"
+				android:layout_height="fill_parent"
+	            android:text="@string/ok" 
+	            android:layout_width="fill_parent" 
+	            android:layout_marginLeft="25dp" 
+	            android:layout_marginRight="25dp">
+		</Button>
+	</LinearLayout>
+</LinearLayout>
