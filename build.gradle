@@ -47,7 +47,7 @@ project(":android") {
 
     dependencies {
         compile project(":core")
-        compile fileTree(dir: 'libs', include: ['GoogleAdMobAdsSdk-6.3.1.jar'])
+        compile 'com.google.android.gms:play-services:5.+'
         compile "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"

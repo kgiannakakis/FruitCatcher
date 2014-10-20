@@ -90,6 +90,8 @@ public class FruitCatcherGame extends Game {
 		gameState.setTotalScore(0);
 		gameState.setLevel(level);
 		gameState.setChallenge(0);
+
+        gameEventListener.showAds(false);
 	}
 	
 	public void startGameKidsMode() {
@@ -110,6 +112,7 @@ public class FruitCatcherGame extends Game {
 				gameEventListener.getHighScoreName();
 			}
 		}
+        gameEventListener.showAds(true);
 	}
 	
 	public void addHighScore(String name) {

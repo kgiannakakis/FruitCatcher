@@ -123,7 +123,10 @@ public class MainActivity extends AndroidApplication
         adsManager.addAdsView(this, layout, adParams);
 
         handler = new MessageHandler(this);
-        
+
+        adsManager.showInterstitial(this, "interstitial ad unit");
+        adsManager.showAdd(true);
+
         setContentView(layout);
     }
 
